@@ -1,12 +1,16 @@
+import { View, Text, StyleSheet, Button } from "react-native";
+import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 
-import { View, Text, StyleSheet } from "react-native";
 
+function PlannerScreen({ navigation }: NativeStackHeaderProps) {
 
-function PlannerScreen() {
   return (
     <View style={styles.container}>
       <Text>Planner Screen</Text>
-
+      <Button
+        title='Go to Home'
+        onPress={() => navigation.navigate("Home")}
+      />
     </View>
   );
 }
