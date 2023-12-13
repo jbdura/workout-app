@@ -61,8 +61,8 @@ Follow the Expo CLI instructions to run the app on your preferred platform (Andr
   - TypeScript
   
 ##  Folder Structure
-  - navigation/: contains navigation components
-  - screens/: contains screens
+  - src/navigation/: contains navigation components
+  - src/screens/: contains screens
   - assets/: Store images, fonts, or any other static assets.
   - app.json: Expo configuration file.
   - tsconfig.json: TypeScript configuration file.
