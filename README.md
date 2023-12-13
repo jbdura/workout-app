@@ -33,27 +33,27 @@ Make sure you have the following installed before running the app:
 
 2. Navigate to the project directory:
 
-  ```bash
-  cd workout-app
-  ```
+      ```bash
+      cd workout-app
+      ```
 
 3. Install dependencies:
 
-  ```bash
-  npm install
-  ```
+    ```bash
+    npm install
+    ```
 
 4. Start the Expo development server:
 
-  ```bash
-  npm start
-  ```
-  or 
-  ```bash
-  expo start
-  ```
+    ```bash
+    npm start
+    ```
+    or 
+    ```bash
+    expo start
+    ```
 
-5. Follow the Expo CLI instructions to run the app on your preferred platform (Android/iOS).
+Follow the Expo CLI instructions to run the app on your preferred platform (Android/iOS).
 
 ### Tech Stack
   - React Native
