@@ -7,6 +7,7 @@ const BottomTab = createBottomTabNavigator();
 
 function BottomTabNav() {
   return (
+    
     <BottomTab.Navigator initialRouteName='Home'>
       <BottomTab.Screen
         name='Home'
