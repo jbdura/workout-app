@@ -1,8 +1,16 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
+import { useEffect } from "react";
 
 
 function PlannerScreen({ navigation }: NativeStackHeaderProps) {
+
+  useEffect(() => {
+    console.log("Rendering Planner screen")
+
+    return () => console.log("Unmounting Planner Screen")
+  }, []);
+
 
   return (
     <View style={styles.container}>
