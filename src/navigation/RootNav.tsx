@@ -11,8 +11,9 @@ function RootNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name='Workout App'
+        name='root'
         component={BottomTabNav}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
