@@ -15,10 +15,7 @@ function PlannerScreen({ navigation }: NativeStackHeaderProps) {
   return (
     <View style={styles.container}>
       <Text>Planner Screen</Text>
-      <Button
-        title='Go to Home'
-        onPress={() => navigation.navigate("Home")}
-      />
+      
     </View>
   );
 }
