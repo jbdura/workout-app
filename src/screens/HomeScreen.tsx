@@ -17,7 +17,7 @@ function HomeScreen({ navigation }: NativeStackHeaderProps) {
 
   return (
     <View style={styles.container}>
-      {/* <Text>Home Screen</Text> */}
+      <Text style={styles.header}>Workouts</Text>
       {/* <Text> { JSON.stringify(data) }</Text> */}
       <FlatList
         data={data as Workout[]}
@@ -35,7 +35,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff',
     justifyContent: 'center',
   },
+  header: {
+    fontSize: 20,
+    marginBottom: 20,
+    fontWeight: "bold",
+    marginLeft: 10
+  }
 });
