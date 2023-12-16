@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { useEffect } from "react";
 import data from '../data.json'
+import { Workout } from "../types/data";
 
 
 function HomeScreen({ navigation }: NativeStackHeaderProps) {
@@ -13,9 +14,10 @@ function HomeScreen({ navigation }: NativeStackHeaderProps) {
   }, []);
 
 
-  const renderItem = ({ item }:any) => (
+  const renderItem = ({ item }: { item: Workout }) => (
     <View>
-      <Text>{ item.name }</Text>
+      <Text>{item.name}</Text>
+      <Text>{item.difficulty}</Text>
     </View>
   )
 
@@ -24,7 +26,7 @@ function HomeScreen({ navigation }: NativeStackHeaderProps) {
       {/* <Text>Home Screen</Text> */}
       {/* <Text> { JSON.stringify(data) }</Text> */}
       <FlatList
-        data={data}
+        data={data as Workout[]}
         renderItem={renderItem}
         keyExtractor={item => item.slug}
       />
