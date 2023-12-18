@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import data from '../data.json'
 import { Workout } from "../types/data";
 import WorkoutItem from "../components/WorkoutItem";
+import { MontserratText } from "../components/styled/MontserratText";
 
 
 function HomeScreen({ navigation }: NativeStackHeaderProps) {
@@ -39,8 +40,9 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 20,
+    fontFamily: "montserrat",
     marginBottom: 20,
     fontWeight: "bold",
     marginLeft: 10
-  }
+  },
 });

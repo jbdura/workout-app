@@ -6,11 +6,16 @@ import useCacheResources from './src/hooks/useCacheResources';
 export default function App() {
 
   const isLoaded = useCacheResources();
-  
-  return (
+
+  if (isLoaded) {
+    return (
     <>
       <Navigation />
       <StatusBar style="auto" />
     </>
   );
+  } else {
+    return null;
+  }
+  
 }
